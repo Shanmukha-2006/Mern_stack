@@ -1,0 +1,35 @@
+
+<!DOCTYEPE html>
+<html>
+<head>
+    <title>Basics of JavaScript</title> 
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet.</p>
+    <ul id="list">
+        </ul>
+    <button id="btn">Add List Item</button>
+    <script>
+        //document.getElementById("para").innerHTML = "<p> Hello World </p>";
+        /*nst li=document.createElement("li");
+        li.textContent="New li element";
+        document.getElementById("list").appendChild(li);
+       var para = document.getElementById("para");
+        console.log(para);
+        para.style.color = "red";
+        para.style.backgroundColor = "yellow";
+        para.style.fontSize = "40px";
+        var para1=document.getElementsByClassName("para1");
+        console.log(para1);
+        */
+        const btn=document.getElementById("btn");
+        btn.addEventListener("click",function(){
+            const li=document.createElement("li");
+            li.innerText="New li element";
+            document.getElementById("list").append(li);
+        });
+     </script>
+    </body>
+
+</div>
+</html>
